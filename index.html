@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <style>
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+    <script type="text/javascript">
+      function ganji(a) {
+        var year = a.value;
+        var cheongan = ["경", "신", "임", "계", "갑", "을", "병", "정", "무", "기"];
+        var hanjagan = ["庚", "辛", "壬", "癸", "甲","乙", "丙", "丁", "戊", "己"];
+        var jiji = ["신", "유", "술", "해", "자", "축", "인", "묘", "진", "사", "오", "미"];
+        var hanji = ["申", "酉", "戌", "亥", "子", "丑", "寅", "卯", "辰", "巳", "午", "未"];
+        var sibiji = ["원숭이", "닭", "개", "돼지", "쥐", "소", "호랑이", "토끼", "용", "뱀", "말", "양"];
+        var ganji1 = year%10;
+        var ganji2 = year%12;
+        document.getElementById('sans').innerText = year + "년은 " + cheongan[ganji1] + jiji[ganji2] + "(" + hanjagan[ganji1] + hanji[ganji2] + ")년이며, " + sibiji[ganji2] + "의 해입니다.";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" onkeyup="ganji(this); " style="width:40px;">년
+    <p id='sans'>결과가 여기 나옵니다</p>
+  </body>
+</html>
