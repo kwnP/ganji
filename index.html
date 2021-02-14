@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="center">
-      <input type="number" onkeyup="ganji(this); " style="width:40px;">년
+      <input type="text" onKeyup="this.value=this.value.replace(/[^0-9^-]/g,''); ganji(this); " style="width:40px;">년
       <p id='sans'>결과가 여기 나옵니다</p>
       <small>
         색 변하는 것 때문에 눈이 아플 수도 있습니다.
