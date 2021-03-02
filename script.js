@@ -1,7 +1,7 @@
 function ganji(a) {
   var year = a.value;
   if(year == 0 || year == ""){
-    document.querySelector("link[rel*='icon']").href = "ico_white.svg";
+    document.querySelector("link[rel*='icon']").href = "/ganji/ico_white.svg";
     document.getElementById('sans').innerText = "결과가 여기 나옵니다";
     document.body.style.backgroundColor = "#ffffff";
     document.body.style.color = "#000000";
@@ -47,7 +47,7 @@ function ganji(a) {
         ganji2 = ganji2 + 12;
       }
 
-      document.querySelector("link[rel*='icon']").href = "ico_" + coloreng[ganji1] + ".svg";
+      document.querySelector("link[rel*='icon']").href = "/ganji/ico_" + coloreng[ganji1] + ".svg";
       document.getElementById('sans').innerText = year + "년은 " + cheongan[ganji1] + jiji[ganji2] + "(" + hanjagan[ganji1] + hanji[ganji2] + ")년이며, " + color[ganji1] + " " + sibiji[ganji2] + "의 해입니다.";
       document.body.style.backgroundColor = colorhex[ganji1];
       document.body.style.color = textcolorhex[ganji1];
