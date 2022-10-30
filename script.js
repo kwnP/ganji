@@ -2,7 +2,7 @@ function ganji(a) {
   var year = a.value;
   if(year == 0 || year == ""){
     document.querySelector("link[rel*='icon']").href = "/ganji/ico_white.svg";
-    document.querySelector("meta[name*='theme-color']").content = colorhex[ganji1];
+    document.querySelector("meta[name*='theme-color']").content = "#ffffff";
     document.getElementById('sans').innerText = "결과가 여기 나옵니다";
     document.body.style.backgroundColor = "#ffffff";
     document.body.style.color = "#000000";
