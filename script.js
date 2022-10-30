@@ -22,6 +22,7 @@ function ganji(a) {
       var ganji2 = year%12;
 
       document.querySelector("link[rel*='icon']").href = "ico_" + coloreng[ganji1] + ".svg";
+      document.querySelector("meta[name*='theme-color']").content = colorhex[ganji1];
       document.getElementById('sans').innerText = year + "년은 " + cheongan[ganji1] + jiji[ganji2] + "(" + hanjagan[ganji1] + hanji[ganji2] + ")년이며, " + color[ganji1] + " " + sibiji[ganji2] + "의 해입니다.";
       document.body.style.backgroundColor = colorhex[ganji1];
       document.body.style.color = textcolorhex[ganji1];
