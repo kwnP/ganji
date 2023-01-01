@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <title>간지(육십갑자) 계산기</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="style.css" charset="UTF-8" />
     <script type="text/javascript" src="script.js"></script>
     <link rel="icon" href="ico_white.svg" sizes="any" type="image/svg+xml">
-    <meta name='theme-color' content="#ffffff">
     <meta name="google-site-verification" content="FGqWQN3TQx2DYGl72qj21gFHNxjLQ_cEPmpxlqxbyBg" />
     <meta name="description" content="알고 싶은 연도의 간지(육십갑자)의 정보를 쉽고 빠르게 만나보세요.">
   </head>
   <body>
-    <div class="center">
-      <input type="text" onKeyup="this.value=this.value.replace(/[^0-9^-]/g,''); ganji(this); " style="width:40px;">년
-      <p id='sans'>결과가 여기 나옵니다</p>
-      <small>
-        오방색은
-        <a href="//namu.wiki/w/오방색" id="ne">나무위키 오방색</a>
-        문서를 참고했습니다.
-      </small>
+    <div>
+      <div id="left">
+        <input id="year" type="text", placeholder="여기에 입력.", onKeyup="this.value=this.value.replace(/[^0-9^-]/g,''); ganji(this); ">년
+      </div>
+      <div id="right">
+        <p id="year_n">결과가 여기 나옵니다.</p>
+        <p><span id="year_t"></span><span id="year_h"></span><span id="year_y"></span><span id="year_i"></span></p>
+        <p id="year_a"></p>
+      </div>
+      <div id="picture"></div>
+      <div id="info">
+        <p>오방색은 <a id="info2" href="//namu.wiki/w/오방색">나무위키 오방색</a> 문서를 참고했습니다.</p>
+        <p>PC나 태블릿으로 보면 동물 그림을 볼 수 있어요.</p>
+      </div>
     </div>
   </body>
 </html>
