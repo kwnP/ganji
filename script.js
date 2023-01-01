@@ -14,6 +14,8 @@ function ganji(a) {
         document.getElementById('year').style.color = "";
         document.getElementById('info').style.color = "";
         document.getElementById('info2').style.color = "";
+        document.querySelector("link[rel*='icon']").href = "/ganji/ico_white.svg";
+        document.querySelector("meta[name*='theme-color']").content = "";
     } else {
         if(year > 0){
             var cheongan = ["경", "신", "임", "계", "갑", "을", "병", "정", "무", "기"];
@@ -62,10 +64,13 @@ function ganji(a) {
         document.getElementById('right').style.backgroundColor = colorhex[ganji1];
         document.getElementById('right').style.color = textcolorhex[ganji1];
         document.getElementById('picture').style.backgroundImage = "url(./" + textcoloreng[ganji1] + "/" + sibiji[ganji2] + ".svg)";
-        
+
         document.getElementById('year').style.backgroundColor = colorhex[ganji1];
         document.getElementById('year').style.color = textcolorhex[ganji1];
         document.getElementById('info').style.color = textcolorhex2[ganji1];
         document.getElementById('info2').style.color = textcolorhex3[ganji1];
+
+        document.querySelector("link[rel*='icon']").href = "ico_" + coloreng[ganji1] + ".svg";
+        document.querySelector("meta[name*='theme-color']").content = colorhex[ganji1];
     }
 }
