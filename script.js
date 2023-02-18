@@ -14,7 +14,7 @@ function ganji(a) {
         document.getElementById('year').style.color = "";
         document.getElementById('info').style.color = "";
         document.getElementById('info2').style.color = "";
-        document.querySelector("link[rel*='icon']").href = "/ganji/ico_white.svg";
+        document.querySelector("link[rel*='icon']").href = "ico_white.svg";
         document.querySelector("meta[name*='theme-color']").content = "";
     } else {
         if(year > 0){
@@ -27,8 +27,6 @@ function ganji(a) {
             var coloreng = ["white", "white", "black", "black", "blue", "blue", "red", "red", "yellow", "yellow"];
             var colorhex = ["#ffffff", "#ffffff", "#111133", "#111133", "#1155bb", "#1155bb", "#bb1133", "#bb1133", "#ffdd33", "#ffdd33"];
             var textcolorhex = ["#000000", "#000000", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#000000", "#000000"];
-            var textcolorhex2 = ["#757575", "#757575", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#757575", "#757575"];
-            var textcolorhex3 = ["#121212", "#121212", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#121212", "#121212"];
             var textcoloreng= ["black", "black", "white", "white", "white", "white", "white", "white", "black", "black"];
             var ganji1 = year%10;
             var ganji2 = year%12;
@@ -42,8 +40,7 @@ function ganji(a) {
             var coloreng = ["white", "yellow", "yellow", "red", "red", "blue", "blue", "black", "black", "white"];
             var colorhex = ["#ffffff", "#ffdd33", "#ffdd33", "#bb1133", "#bb1133", "#1155bb", "#1155bb", "#111133", "#111133", "#ffffff"];
             var textcolorhex = ["#000000", "#000000", "#000000", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#000000"];
-            var textcolorhex2 = ["#757575", "#757575", "#757575", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#757575"];
-            var textcolorhex3 = ["#121212", "#121212", "#121212", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#121212"];
+            var textcoloreng= ["black", "black", "black", "white", "white", "white", "white", "white", "white", "black"];
             var ganji1 = Math.abs(year)%10 - 1;
             var ganji2 = Math.abs(year)%12 - 1;
       
@@ -67,8 +64,8 @@ function ganji(a) {
 
         document.getElementById('year').style.backgroundColor = colorhex[ganji1];
         document.getElementById('year').style.color = textcolorhex[ganji1];
-        document.getElementById('info').style.color = textcolorhex2[ganji1];
-        document.getElementById('info2').style.color = textcolorhex3[ganji1];
+        document.getElementById('info').style.color = textcolorhex[ganji1];
+        document.getElementById('info2').style.color = textcolorhex[ganji1];
 
         document.querySelector("link[rel*='icon']").href = "ico_" + coloreng[ganji1] + ".svg";
         document.querySelector("meta[name*='theme-color']").content = colorhex[ganji1];
