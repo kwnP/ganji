@@ -60,7 +60,14 @@ function ganji(a) {
 
         document.getElementById('right').style.backgroundColor = colorhex[ganji1];
         document.getElementById('right').style.color = textcolorhex[ganji1];
-        document.getElementById('picture').style.backgroundImage = "url(./" + textcoloreng[ganji1] + "/" + sibiji[ganji2] + ".svg)";
+
+        if (textcoloreng[ganji1] == "white") {
+            document.getElementById('picture').style.backgroundImage = "url(./animal/" + sibiji[ganji2] + ".svg)";
+            document.getElementById('picture').style.filter = "var(--white)";
+        } else {
+            document.getElementById('picture').style.backgroundImage = "url(./animal/" + sibiji[ganji2] + ".svg)";
+            document.getElementById('picture').style.filter = "none";
+        }
 
         document.getElementById('year').style.backgroundColor = colorhex[ganji1];
         document.getElementById('year').style.color = textcolorhex[ganji1];
