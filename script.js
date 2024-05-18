@@ -1,6 +1,6 @@
 function ganji(a) {
     var year = a.value;
-    if(year == 0 || year == ""){
+    if(year == 0 || year == "" || year == "-"){
         document.getElementById('year_n').innerText = "결과가 여기 나옵니다.";
         document.getElementById('year_t').innerText = "";
         document.getElementById('year_h').innerText = "";
