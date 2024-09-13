@@ -121,6 +121,7 @@ p {
 }
 
 span#year_t {
+    font-family: 'LINESeedKR-Bd', sans-serif;
     font-weight: 700;
     margin: 0;
     font-size: 72pt;
