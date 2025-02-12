@@ -1,5 +1,5 @@
 # 간지 계산기
-https://kwnp.github.io/ganji/
+https://ganji.kwnp.kr/
 <br>
 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 <br>
